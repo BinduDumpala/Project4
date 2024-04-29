@@ -15,6 +15,6 @@ def calculate(request):
         con_dict["res"]=x*y
     else:
         con_dict["res"]=x/y
-        return render(request,'result.html',context=con_dict)
+    return render(request,'result.html',context=con_dict)
     return HttpResponse(con_dict["res"])
 # Create your views here.
